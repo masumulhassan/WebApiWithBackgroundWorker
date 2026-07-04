@@ -1,0 +1,14 @@
+jobs:
+  Job2:
+    name: Job 2
+    runs-on: self-hosted
+    steps:
+      - type: script
+        script-content: echo "Hello";
+        name: Test 1
+  Job3:
+    name: Job 3
+    steps:
+      - type: dotnet-build
+        name: Build
+        projects: WebApiWithBackgroundWorker.sln
