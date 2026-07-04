@@ -1,14 +1,8 @@
 jobs:
-  Job2:
-    name: Job 2
+  Job:
+    name: Job
     runs-on: self-hosted
     steps:
       - type: script
         script-content: echo "Hello from new branch";
-        name: Test 1
-  Job3:
-    name: Job 3
-    steps:
-      - type: dotnet-build
-        name: Build
-        projects: WebApiWithBackgroundWorker.sln
+        name: Test console log
