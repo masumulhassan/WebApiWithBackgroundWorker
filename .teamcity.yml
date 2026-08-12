@@ -4,3 +4,5 @@ jobs:
     steps: []
 parameters:
   run-job-1: 'true'
+dependencies:
+  - Test_Build
